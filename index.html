@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Buy</title>
+
+    <!-------------- google font ------------>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-------- DaisyUi and tailwind set up ------->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!------------tailwind custom color ------------>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary': '#1DD100',
+          }
+        }
+      }
+    }
+  </script>
+
+    <style>
+        .raleway {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="raleway">
+        <header class="container mx-auto my-5 lg:my-10 lg:px-32">
+
+            <!------------navbar section start here ----------->
+            <div class="flex justify-between items-center px-4">
+              <div class="">
+                <div class="dropdown">
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <a class="text-4xl font-extrabold">E-Ticket</a>
+              </div>
+              <div class=" hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+              </div>
+              <div class="flex items-center gap-3 px-8 py-4 rounded-xl border-red-200 border bg-[#1dd1001a]">
+                <h3 class="text-primary text-xl font-bold">Bus</h3>
+                <img src="images/bus-icon.png" alt="">
+              </div>
+            </div>
+
+        <section class="mt-10">
+            <div
+          class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url('images/banner.png')] bg-center bg-cover  lg:h-[550px] rounded-2xl">
+          <div class="flex items-center justify-center lg:h-[550px]">
+          <div class="text-center p-10 space-y-5">
+            <h4 class=" text-3xl lg:text-6xl font-extrabold text-white">End-to-End Travel With<br><span class="text-primary">P Paribahan</span></h4>
+            <p class="text-white font-medium lg:w-[700px] mx-auto">View and choose your preferred seats from an interactive seating chart. Plan your journey by selecting the seat that suits your comfort and preferences.
+            </p>
+            <a class="btn border-none bg-primary px-6 text-xl">Buy Tickets</a>
+          </div>
+        </div>
+        </div>
+    </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
