@@ -55,6 +55,10 @@
             align-items: center;
             justify-content: center;
         }
+        li{
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
@@ -173,7 +177,7 @@
                             </div>
                             <div class="bg-[#d9ead3] rounded-xl lg:flex items-center p-4 mt-10">
                                 <img class="mr-2" src="images/seat-green.png" alt="">
-                                <span class="text-primary text-lg font-medium">40</span>
+                                <span id="seats-available" class="text-primary text-lg font-medium">40</span>
                                 <p class="text-primary text-lg font-medium">Seats left</p>
                             </div>
                         </div>
@@ -291,14 +295,14 @@
 
                         <div class="bg-[#F7F8F8] rounded-3xl p-8">
                             <div class="flex justify-between">
-                                <p class="plan font-bold">Seat <span
+                                <p class="plan font-bold">Seat <span id="number-count"
                                         class="bg-primary text-white rounded-lg px-3 font-semibold">0</span>
                                 </p>
                                 <p class="font-bold">Class</p>
                                 <p class="font-bold">Price</p>
                             </div>
                             <hr class="border-dashed my-7 border-gray-400">
-                            <div class="new-price">
+                            <div id="new-price">
 
                             </div>
 
@@ -306,10 +310,10 @@
 
                             <div class="flex justify-between ">
                                 <p class="font-bold">Total Price</p>
-                                <p class="font-bold">BDT <span class="font-semibold">0</span></p>
+                                <p class="font-bold">BDT <span id="total-price" class="font-semibold">0</span></p>
                             </div>
 
-                            <div class="bg-white rounded-xl flex justify-between p-3 mt-6">
+                            <div id="discount-input" class="bg-white rounded-xl flex justify-between p-3 mt-6">
                                 <input type="text" placeholder="Have any coupon?">
                                 <button
                                     class="px-10 py-4 rounded-xl bg-primary font-semibold text-white text-xl">Apply</button>
@@ -353,6 +357,7 @@
     <footer>
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
