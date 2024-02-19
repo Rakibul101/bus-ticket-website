@@ -54,7 +54,7 @@ function couponCode(allCount){
 function applyCoupon(){
     const price = document.getElementById('total-price').innerText;
     const convertPrice = parseInt(price);
-    const discouPrice = document.getElementById('discount');
+    const discountPrice = document.getElementById('discount');
     const totalMoney = document.getElementById('total-money');
     const inputField = document.getElementById('input-field').value;
 }
