@@ -113,6 +113,7 @@
         </section>
         <!-- ----------------banner section end here------------- -->
     </header>
+    <section id="hello">
     <main>
         <!-- -------------best offer section start here -------- -->
 
@@ -337,7 +338,7 @@
                                     class="w-full border p-6 rounded-3xl" required>
 
                                 <p class=" font-bold my-6">Phone Number*</p>
-                                <input type="number" name="" id="" placeholder="Enter your phone number"
+                                <input type="number" name="" id="number" placeholder="Enter your phone number"
                                     class="w-full border p-6 rounded-3xl" required>
 
                                 <p class="font-bold my-6">Email ID</p>
@@ -345,7 +346,7 @@
                                     class="w-full border p-6 rounded-3xl" required>
 
                                 <button type="submit"
-                                    class=" bg-primary py-5 px-6 w-full text-2xl font-extrabold rounded-3xl my-6 text-center  text-white">Next</button>
+                                    class=" bg-primary py-5 px-6 w-full text-2xl font-extrabold rounded-3xl my-6 text-center  text-white" id="next" onclick="then()">Next</button>
                             </form>
                         </div>
                         <div class="flex justify-around my-4">
@@ -357,9 +358,27 @@
             </section>
         </section>
     </main>
-    <footer>
-        
-    </footer>
+</section>
+
+        <div class=" min-h-screen bg-[#F2F1F1] flex flex-col justify-center items-center hidden" id="continue">
+
+            <div class=" lg::w-3/5 rounded-3xl bg-white text-center lg::p-14 p-6">
+                <div class="mx-auto flex justify-center ">
+                    <img class="justify-center" src="images/success.png" alt="">
+                </div>
+                <div>
+                    <p class="mt-9 text-[#27AE60] font-bold text-xl">SUCCESS</p>
+                    <p class="mt-9 text-xl font-medium">Thank you for Booking Our Bus Seats. </p>
+                    <p class="mt-2 font-medium text-xl">We are working hard to find the best service and deals for you. </p>
+                    <p class="mt-2">Shortly you will find a confirmation in your email.</p>
+    
+                    <button
+                        class="mt-5 lg:pl-24 lg:pr-24 pl-6 pr-6 font-semibold text-xl btn bg-[#27AE60] text-white rounded-full" onclick="continues()"><a href="#hello">Continue</a></button>
+    
+                </div>
+            </div>
+    
+        </div>
     <script src="js/script.js"></script>
 </body>
 

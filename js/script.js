@@ -65,7 +65,7 @@ function applyCoupon(){
         discountPrice.innerText = priceLess;
     }
 
-    else if(inputField === "NEW15"){
+    else if(inputField === "Couple 20"){
         const money = convertPrice - (convertPrice*20)/100;
         totalMoney.innerText = money;
         const priceLess = (convertPrice * 20) / 100;
@@ -75,3 +75,47 @@ function applyCoupon(){
         totalMoney.innerText = convertPrice;
     }
 }
+
+function then(){
+    const home= document.getElementById('hello');
+    home.classList.add('hidden');
+  
+    const continues= document.getElementById('continue');
+    continues.classList.remove('hidden');
+  }
+
+  const seatElements = document.querySelectorAll('p[class^=seat]'); 
+const numberInput = document.getElementById('number');
+const submitBtn = document.getElementById('next');
+
+let selectedSeat = null; 
+
+seatElements.forEach(seatElement => {
+  seatElement.addEventListener('click', () => {
+    
+    if (selectedSeat) {
+      selectedSeat.classList.remove('selected');
+    }
+    
+    seatElement.classList.add('selected');
+    selectedSeat = seatElement;
+    updateSubmitButton(); 
+  });
+});
+
+function updateSubmitButton() {
+  const numberValue = numberInput.value.trim();
+
+  
+  if (numberValue === '' || isNaN(Number(numberValue))) {
+    submitBtn.disabled = true;
+    return; 
+  }
+
+
+  submitBtn.disabled = !selectedSeat; 
+}
+
+numberInput.addEventListener('input', updateSubmitButton);
+
+updateSubmitButton();
