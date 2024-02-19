@@ -57,4 +57,21 @@ function applyCoupon(){
     const discountPrice = document.getElementById('discount');
     const totalMoney = document.getElementById('total-money');
     const inputField = document.getElementById('input-field').value;
+
+    if(inputField === "NEW15"){
+        const money = convertPrice - (convertPrice*15)/100;
+        totalMoney.innerText = money;
+        const priceLess = (convertPrice * 15) / 100;
+        discountPrice.innerText = priceLess;
+    }
+
+    else if(inputField === "NEW15"){
+        const money = convertPrice - (convertPrice*20)/100;
+        totalMoney.innerText = money;
+        const priceLess = (convertPrice * 20) / 100;
+        discountPrice.innerText = priceLess;
+    }
+    else{
+        totalMoney.innerText = convertPrice;
+    }
 }
