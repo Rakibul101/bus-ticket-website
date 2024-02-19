@@ -42,5 +42,19 @@ for(const seat of seats){
 }
 
 function couponCode(allCount){
-    const discoutInput = document.getElementById('discount-input');
+    const discountInput = document.getElementById('discount-input');
+    if (allCount === 4){
+        discountInput.classList.remove('hidden');
+    }
+    else{
+        discountInput.classList.add('hidden');
+    }
+}
+
+function applyCoupon(){
+    const price = document.getElementById('total-price').innerText;
+    const convertPrice = parseInt(price);
+    const discouPrice = document.getElementById('discount');
+    const totalMoney = document.getElementById('total-money');
+    const inputField = document.getElementById('input-field').value;
 }

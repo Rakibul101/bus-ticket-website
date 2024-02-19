@@ -314,15 +314,20 @@
                             </div>
 
                             <div id="discount-input" class="bg-white rounded-xl flex justify-between p-3 mt-6">
-                                <input type="text" placeholder="Have any coupon?">
-                                <button
+                                <input type="text" id="input-field" placeholder="Have any coupon?">
+                                <button onclick="applyCoupon()"
                                     class="px-10 py-4 rounded-xl bg-primary font-semibold text-white text-xl">Apply</button>
 
                             </div>
 
                             <div class="flex justify-between mt-6">
+                                <p class="font-bold">Discount</p>
+                                <p class="font-bold">BDT <span class="font-semibold" id="discount">0</span></p>
+                            </div>
+
+                            <div class="flex justify-between mt-6">
                                 <p class="font-bold">Grand Total</p>
-                                <p class="font-bold">BDT <span class="font-semibold">0</span></p>
+                                <p class="font-bold">BDT <span class="font-semibold" id="total-money">0</span></p>
                             </div>
                         </div>
                         <div>
